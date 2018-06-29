@@ -1,0 +1,33 @@
+.z-spinner-item-react-wrapper{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &-item{
+    height: 100%;
+
+    animation: reactAnimate 1.2s infinite ease-in-out;
+  }
+  .z-react-item-2{
+    animation-delay: -1.1s;
+  }
+  .z-react-item-3{
+    animation-delay: -1.0s;
+  }
+  .z-react-item-4{
+    animation-delay: -0.9s;
+  }
+  .z-react-item-5{
+    animation-delay: -0.8s;
+  }
+}
+
+@keyframes reactAnimate {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1.0);
+  }
+}

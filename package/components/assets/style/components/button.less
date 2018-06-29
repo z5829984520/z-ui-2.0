@@ -1,0 +1,89 @@
+@import "../utils/const.less";
+
+.z-button-wrapper{
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-info{
+    background-color: @infoColor;
+    color: #fff;
+  }
+  &-info-plain{
+    background-color: transparent;
+    border: 1px solid @infoColor;
+    color: @infoColor;
+  }
+
+  &-primary{
+    background-color: @primaryColor;
+    color: #fff;
+  }
+  &-primary-plain{
+    background-color: transparent;
+    border: 1px solid @primaryColor;
+    color: @primaryColor;
+  }
+
+  &-success{
+    background-color: @successColor;
+    color: #fff;
+  }
+  &-success-plain{
+    background-color: transparent;
+    border: 1px solid @successColor;
+    color: @successColor;
+  }
+
+  &-warning{
+    background-color: @warningColor;
+    color: #fff;
+  }
+  &-warning-plain{
+    background-color: transparent;
+    border: 1px solid @warningColor;
+    color: @warningColor;
+  }
+
+  &-danger{
+    background-color: @dangerColor;
+    color: #fff;
+  }
+  &-danger-plain{
+    background-color: transparent;
+    border: 1px solid @dangerColor;
+    color: @dangerColor;
+  }
+
+  &-normal{
+    font-size: @normalFontSize;
+    height: @normalSize;
+  }
+  &-mini{
+    font-size: @miniFontSize;
+    height: @miniSize;
+  }
+  &-small{
+    font-size: @smallFontSize;
+    height: @smallSize;
+  }
+  &-large{
+    font-size: @largeFontSize;
+    height: @largeSize;
+  }
+
+  &-radius{
+    border-radius: 4px;
+  };
+  &-disabled{
+    opacity: 0.6;
+  }
+}

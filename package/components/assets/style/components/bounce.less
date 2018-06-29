@@ -1,0 +1,28 @@
+.z-spinner-item-bounce-wrapper{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &-item{
+    border-radius: 100%;
+
+    animation: bounceAnimate 1.4s infinite ease-in-out;
+    animation-fill-mode: both;
+  }
+  .z-bounce-1{
+    animation-delay: -0.32s;
+  }
+  .z-bounce-2{
+    animation-delay: -0.16s;
+  }
+}
+
+@keyframes bounceAnimate {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

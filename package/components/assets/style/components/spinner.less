@@ -1,0 +1,35 @@
+@import "../utils/const.less";
+
+.z-spinner-wrapper{
+  position: absolute;
+  z-index: 2500;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  &-inner{
+    position: absolute;
+    z-index: 3000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    max-width: 60%;
+    overflow: hidden;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &-content{
+      width: 100%;
+      padding-top: 6px;
+      color: #fff;
+      font-size: @smallFontSize;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../utils/const.less";
+
+.z-scroll-wrapper{
+  width: 100%;
+  position: relative;
+  &-container{
+    width: 100%;
+    &-header{
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &-pull-drop{
+        width: 100%;
+        font-size: @smallFontSize;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        &-icon{
+          font-size: @largeFontSize;
+          transition: all 0.2s;
+        }
+      }
+      &-loading{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: @smallFontSize;
+        color: #666;
+        &-icon{
+          margin-right: 4px;
+        }
+      }
+      &-end{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: @smallFontSize;
+        color: #666;
+      }
+    }
+    &-footer{
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+      &-loading, &-last{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: @smallFontSize;
+        color: #666;
+      }
+    }
+  }
+}
+.z-scroll-wrapper-scrollbar{
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

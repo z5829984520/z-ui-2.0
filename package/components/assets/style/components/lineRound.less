@@ -1,0 +1,21 @@
+.z-spinner-item-line-wrapper{
+  box-sizing: border-box;
+  &-inner{
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    animation: lineRoundAnimate 1s linear infinite;
+  }
+}
+
+@keyframes lineRoundAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

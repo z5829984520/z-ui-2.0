@@ -1,0 +1,26 @@
+.z-spinner-item-round-wrapper{
+  box-sizing: border-box;
+  position: relative;
+  &-item{
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    animation: roundAnimate 2.0s infinite ease-in-out;
+  }
+  .z-round-item-2{
+    animation-delay: -1.0s;
+  }
+}
+
+@keyframes roundAnimate {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
