@@ -244,7 +244,16 @@
         this.currentScrollTop = scrollTop;
         this.listHeight = listHeight;
 
+        // 若没有在载入时候获取高度，在获取一下防止无限滚动计算错误
+        if (!this.scrollHeight) {
+          this.scrollHeight = getDom(this.$refs.listWrapper).height
+        }
+
         if (this.isPullBottom && this.currentScrollTop >= this.listHeight - this.scrollHeight - (this.isPullTop ? this.topDistance : 0) - this.bottomDistance) {
+          if (this.pullBottomStatus === 'last') {
+            return false
+          }
+
           this.pullBottomDropped = true;
           this.pullBottomStatus = 'loading';
           this.$emit('handlePullBottom');
@@ -322,5 +331,5 @@
 </script>
 
 <style lang="less" type="text/less">
-  @import "../../assets/style/components/scroll.less";
+  @import "../../../assets/style/components/scroll.less";
 </style>

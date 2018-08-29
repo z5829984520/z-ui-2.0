@@ -42,5 +42,5 @@
 </script>
 
 <style type="text/less" lang="less">
-  @import "../../assets/style/components/spinner.less";
+  @import "../../../assets/style/components/spinner.less";
 </style>

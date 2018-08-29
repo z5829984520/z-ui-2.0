@@ -21,6 +21,7 @@
   * @params type          按钮类型
   * @params size          按钮尺寸
   * @params showRadius    是否显示圆角
+  * @params showBorder    是否显示边框
   * @params plain         是否镂空
   * @params disabled      是否禁用
   * @params rippleColor   涟漪背景图
@@ -62,5 +63,5 @@
 </script>
 
 <style type="text/less" lang="less">
-  @import "../../assets/style/components/button.less";
+  @import "../../../assets/style/components/button.less";
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="v-touch-ripple"
+  <div class="z-touch-ripple"
        @mousedown="mousedown"
        @mouseup="mouseup"
        ref="inner">
@@ -149,23 +149,23 @@
 </script>
 
 <style lang="less" type="text/less">
-  .v-touch-ripple {
+  .z-touch-ripple {
     position: relative;
     display: inline-block;
     width: 100%;
-    > .touch-ripple {
+    .touch-ripple {
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
-      > .ripple-inner {
+      .ripple-inner {
         position: relative;
         overflow: hidden;
         display: block;
         width: 100%;
         height: 100%;
-        > .ripple-core {
+        .ripple-core {
           display: block;
           position: absolute;
           border-radius: 50%;

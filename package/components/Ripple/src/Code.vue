@@ -27,11 +27,11 @@
     },
     beforeDestroy() {
       if (this.timers.transform) {
-        clearTimeout(this.timers.transform)
+        clearTimeout(this.timers.transform);
         this.timers.transform = null
       }
       if (this.timers.rippleing) {
-        clearTimeout(this.timers.rippleing)
+        clearTimeout(this.timers.rippleing);
         this.timers.rippleing = null
       }
     },
@@ -59,16 +59,16 @@
         this.$nextTick(() => {
 
           // 内部状态
-          this.rippleing = true
+          this.rippleing = true;
 
           // 开始涟漪
           this.timers.transform = setTimeout(() => {
             this.coreStyle.transform = 'scale(1)'
-          }, 0)
+          }, 0);
 
           // 结束涟漪
           this.timers.rippleing = setTimeout(() => {
-            this.rippleing = false
+            this.rippleing = false;
             this.$emit('end', this.id)
           }, this.computeSpeed * 1000)
         })

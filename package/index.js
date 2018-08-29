@@ -4,7 +4,9 @@ import {
   Spinner,
   SpinnerItem,
   Button,
-  Scroll
+  Scroll,
+  Toast,
+  Alert,
 } from './components'
 
 const components = [
@@ -27,12 +29,16 @@ const install = (Vue, opts={}) => {
   });
 
   Vue.$Spinner = Vue.prototype.$Spinner = Spinner;
+  Vue.$Toast = Vue.prototype.$Toast = Toast;
+  Vue.$Alert = Vue.prototype.$Alert = Alert;
 };
 
 const ZUI = {
   version: '1.0.0',
   install,
   Spinner,
+  Toast,
+  Alert,
   ...components
 };
 

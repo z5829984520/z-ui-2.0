@@ -4,13 +4,17 @@
 
 <script>
   import {
-    arrowLineUp
+    arrowLineUp,
+    success,
+    warning
   } from './Item'
 
   export default {
     name: 'zIcon',
     components: {
-      arrowLineUp
+      arrowLineUp,
+      success,
+      warning
     },
     props: {
       name: {

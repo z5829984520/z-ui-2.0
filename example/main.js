@@ -7,15 +7,19 @@ import mavonEditor from 'mavon-editor'
 
 import './assets/style/reset.css'
 import {
+  Ripple,
   Button,
   Scroll,
-  SpinnerItem
+  SpinnerItem,
+  Icon
 } from '../package/components'
 
 Vue.use(mavonEditor);
+Vue.use(Ripple);
 Vue.use(Button);
 Vue.use(Scroll);
 Vue.use(SpinnerItem);
+Vue.use(Icon);
 
 Vue.config.productionTip = false;
 

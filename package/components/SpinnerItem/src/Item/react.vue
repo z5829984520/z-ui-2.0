@@ -15,5 +15,5 @@
 </script>
 
 <style lang="less" type="text/less">
-  @import "../../../assets/style/components/react.less";
+  @import "../../../../assets/style/components/react.less";
 </style>

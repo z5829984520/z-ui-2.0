@@ -17,11 +17,12 @@
 
 <style lang="less" type="text/less">
   .list-router-page-container{
-    position: absolute;
+    position: fixed;
     z-index: 10;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
+    overflow: hidden;
   }
 </style>

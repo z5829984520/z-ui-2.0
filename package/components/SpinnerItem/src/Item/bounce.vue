@@ -15,5 +15,5 @@
 </script>
 
 <style lang="less" type="text/less">
-  @import "../../../assets/style/components/bounce.less";
+  @import "../../../../assets/style/components/bounce.less";
 </style>

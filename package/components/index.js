@@ -4,6 +4,8 @@ import Spinner from './Spinner'
 import SpinnerItem from './SpinnerItem'
 import Button from './Button'
 import Scroll from './Scroll'
+import Toast from './Toast'
+import Alert from './Alert'
 
 export {
   Ripple,
@@ -12,4 +14,6 @@ export {
   SpinnerItem,
   Button,
   Scroll,
+  Toast,
+  Alert
 }

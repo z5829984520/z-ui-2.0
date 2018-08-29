@@ -14,5 +14,5 @@
 </script>
 
 <style lang="less" type="text/less">
-  @import "../../../assets/style/components/round.less";
+  @import "../../../../assets/style/components/round.less";
 </style>

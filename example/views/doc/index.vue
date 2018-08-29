@@ -4,7 +4,7 @@
       <div class="doc-wrapper-slider-inner">
         <h3>组件列表</h3>
         <div class="doc-wrapper-slider-inner-item" v-for="(item, index) in list" :key="item.path" @click="linkTo(item.path)">
-          <div class="doc-wrapper-slider-inner-item-label">
+          <div class="doc-wrapper-slider-inner-item-label" :class="{ 'doc-wrapper-slider-inner-item-active' : item.path === src }">
             <span>{{ item.label }}</span><span>·</span><span>{{ item.dec }}</span>
           </div>
         </div>
@@ -113,6 +113,8 @@
         h3{
           text-align: center;
           border-bottom: 1px solid #ccc;
+          padding: 6px 0;
+          color: #333;
         }
         &-item{
           width: 100%;
@@ -121,6 +123,10 @@
           font-size: 16px;
           color: #666;
           cursor: pointer;
+          &-active{
+            color: #333;
+            font-weight: 700;
+          }
         }
       }
     }

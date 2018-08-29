@@ -1,0 +1,106 @@
+@import "../utils/const.less";
+
+.z-alert-wrapper{
+  width: 80%;
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  border-radius: 6px;
+  margin-left: -40%;
+  &-header{
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: @normalFontSize;
+    color: #333;
+    font-weight: 700;
+  }
+  &-icon{
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+  &-body{
+    width: 100%;
+    text-align: center;
+    padding: 0 12px 12px 12px;
+    font-size: @normalFontSize;
+  }
+  &-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #e1e1e1;
+      transform: scaleY(0.5);
+      right: 0;
+      top: 0;
+    }
+    &-item{
+      flex: 1;
+      font-size: @normalFontSize;
+      position: relative;
+      cursor: pointer;
+      background-color: #fff;
+      text-align: center;
+      height: 42px;
+      line-height: 42px;
+    }
+    &-ok{
+      color: @primaryColor;
+    }
+    &-cancel{
+      color: #333;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #e1e1e1;
+        transform: scaleX(0.5);
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+@keyframes global-fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes global-scale {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.z-alert-enter-active{
+  animation: global-fadeIn 0.4s;
+}
+
+.z-alert-wrapper{
+  animation: global-scale 0.4s;
+}
