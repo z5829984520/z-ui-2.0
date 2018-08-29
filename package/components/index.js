@@ -6,6 +6,7 @@ import Button from './Button'
 import Scroll from './Scroll'
 import Toast from './Toast'
 import Alert from './Alert'
+import Popup from './Popup'
 
 export {
   Ripple,
@@ -15,5 +16,6 @@ export {
   Button,
   Scroll,
   Toast,
-  Alert
+  Alert,
+  Popup
 }

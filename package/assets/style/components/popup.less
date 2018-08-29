@@ -1,0 +1,72 @@
+@import "../utils/const.less";
+
+.z-popup-container{
+  position: fixed;
+  transition: 0.2s ease-out;
+}
+
+.z-popup-bottom{
+  left: 50%;
+  transform: translate3d(-50%, 0, 0) scale(1);
+  bottom: 0;
+  top: auto;
+  right: auto;
+  width: 100%;
+}
+.z-popup-top{
+  left: 50%;
+  transform: translate3d(-50%, 0, 0) scale(1);
+  top: 0;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+}
+.z-popup-left{
+  top: 50%;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  transform: translate3d(0, -50%, 0) scale(1);
+  height: 100%;
+}
+.z-popup-right{
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translate3d(0, -50%, 0) scale(1);
+  height: 100%;
+}
+
+.z-popup-left-screen,
+.z-popup-right-screen{
+  width: 100%;
+  overflow: hidden;
+}
+
+.z-popup-top-screen,
+.z-popup-bottom-screen{
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 底部滑出 */
+.z-popup-slide-bottom-enter,
+.z-popup-slide-bottom-leave-active{
+  transform: translate3d(-50%, 100%, 0) scale(1);
+}
+/* 顶部滑出 */
+.z-popup-slide-top-enter,
+.z-popup-slide-top-leave-active{
+  transform: translate3d(-50%, -100%, 0) scale(1);
+}
+/* 左侧滑出 */
+.z-popup-slide-left-enter,
+.z-popup-slide-left-leave-active{
+  transform: translate3d(-100%, -50%, 0) scale(1);
+}
+/* 右侧滑出 */
+.z-popup-slide-right-enter,
+.z-popup-slide-right-leave-active{
+  transform: translate3d(100%, -50%, 0) scale(1);
+}

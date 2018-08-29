@@ -10,6 +10,7 @@ import Spinner from '../views/list/pages/Spinner'
 import Toast from '../views/list/pages/Toast'
 import Alert from '../views/list/pages/Alert'
 import Icon from '../views/list/pages/Icon'
+import Popup from '../views/list/pages/Popup'
 
 Vue.use(Router);
 
@@ -50,6 +51,10 @@ export default new Router({
         {
           path: '/alert',
           component: Alert
+        },
+        {
+          path: '/popup',
+          component: Popup
         }
       ]
     },

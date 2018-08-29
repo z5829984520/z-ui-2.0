@@ -11,7 +11,8 @@ import {
   Button,
   Scroll,
   SpinnerItem,
-  Icon
+  Icon,
+  Popup
 } from '../package/components'
 
 Vue.use(mavonEditor);
@@ -20,6 +21,7 @@ Vue.use(Button);
 Vue.use(Scroll);
 Vue.use(SpinnerItem);
 Vue.use(Icon);
+Vue.use(Popup);
 
 Vue.config.productionTip = false;
 

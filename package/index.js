@@ -7,6 +7,7 @@ import {
   Scroll,
   Toast,
   Alert,
+  Popup
 } from './components'
 
 const components = [
@@ -14,7 +15,8 @@ const components = [
   Icon,
   Button,
   SpinnerItem,
-  Scroll
+  Scroll,
+  Popup
 ];
 
 const install = (Vue, opts={}) => {

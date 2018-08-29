@@ -1,5 +1,5 @@
 <template>
-  <div class="z-popup-util-wrapper" v-show="visible" :style="{ zIndex }" @click="handleClick">
+  <div class="z-popup-util-wrapper" v-show="visible" :style="{ zIndex, overflow: 'hidden' }" @click="handleClick">
     <slot></slot>
   </div>
 </template>
