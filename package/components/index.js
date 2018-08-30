@@ -7,6 +7,7 @@ import Scroll from './Scroll'
 import Toast from './Toast'
 import Alert from './Alert'
 import Popup from './Popup'
+import Tab from './Tab'
 
 export {
   Ripple,
@@ -17,5 +18,6 @@ export {
   Scroll,
   Toast,
   Alert,
-  Popup
+  Popup,
+  Tab
 }

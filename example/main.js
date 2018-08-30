@@ -12,7 +12,8 @@ import {
   Scroll,
   SpinnerItem,
   Icon,
-  Popup
+  Popup,
+  Tab
 } from '../package/components'
 
 Vue.use(mavonEditor);
@@ -22,6 +23,8 @@ Vue.use(Scroll);
 Vue.use(SpinnerItem);
 Vue.use(Icon);
 Vue.use(Popup);
+Vue.use(Tab);
+Vue.use(Tab.Item);
 
 Vue.config.productionTip = false;
 

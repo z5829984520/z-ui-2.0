@@ -6,5 +6,6 @@ export const list = [
   {label: 'Spinner', dec: 'loading', path: 'spinner'},
   {label: 'Toast', dec: 'Toast组件', path: 'toast'},
   {label: 'Alert', dec: 'Alert组件', path: 'alert'},
-  {label: 'Popup', dec: '侧滑栏', path: 'popup'}
+  {label: 'Popup', dec: '侧滑栏', path: 'popup'},
+  {label: 'Tab', dec: '内容切换', path: 'tab'}
 ];

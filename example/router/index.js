@@ -11,6 +11,7 @@ import Toast from '../views/list/pages/Toast'
 import Alert from '../views/list/pages/Alert'
 import Icon from '../views/list/pages/Icon'
 import Popup from '../views/list/pages/Popup'
+import Tab from '../views/list/pages/Tab'
 
 Vue.use(Router);
 
@@ -55,6 +56,10 @@ export default new Router({
         {
           path: '/popup',
           component: Popup
+        },
+        {
+          path: '/tab',
+          component: Tab
         }
       ]
     },
