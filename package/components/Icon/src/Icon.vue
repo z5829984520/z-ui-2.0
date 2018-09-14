@@ -6,7 +6,8 @@
   import {
     arrowLineUp,
     success,
-    warning
+    warning,
+    arrowRight,
   } from './Item'
 
   export default {
@@ -14,7 +15,8 @@
     components: {
       arrowLineUp,
       success,
-      warning
+      warning,
+      arrowRight
     },
     props: {
       name: {

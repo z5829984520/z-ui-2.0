@@ -21,7 +21,8 @@
         list: [
           'success',
           'warning',
-          'arrowLineUp'
+          'arrowLineUp',
+          'arrowRight'
         ]
       }
     }
@@ -33,7 +34,7 @@
     width: 100%;
     &-item{
       display: inline-block;
-      width: 25%;
+      width: 33.333333333%;
       text-align: center;
       padding: 4px;
     }

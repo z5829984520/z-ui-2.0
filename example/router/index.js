@@ -12,6 +12,7 @@ import Alert from '../views/list/pages/Alert'
 import Icon from '../views/list/pages/Icon'
 import Popup from '../views/list/pages/Popup'
 import Tab from '../views/list/pages/Tab'
+import Collapse from '../views/list/pages/Collapse'
 
 Vue.use(Router);
 
@@ -60,6 +61,10 @@ export default new Router({
         {
           path: '/tab',
           component: Tab
+        },
+        {
+          path: '/collapse',
+          component: Collapse
         }
       ]
     },

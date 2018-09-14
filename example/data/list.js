@@ -7,5 +7,6 @@ export const list = [
   {label: 'Toast', dec: 'Toast组件', path: 'toast'},
   {label: 'Alert', dec: 'Alert组件', path: 'alert'},
   {label: 'Popup', dec: '侧滑栏', path: 'popup'},
-  {label: 'Tab', dec: '内容切换', path: 'tab'}
+  {label: 'Tab', dec: '内容切换', path: 'tab'},
+  {label: 'Collapse', dec: '折叠组价', path: 'collapse'}
 ];
