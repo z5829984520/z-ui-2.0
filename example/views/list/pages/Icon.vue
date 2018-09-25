@@ -22,7 +22,9 @@
           'success',
           'warning',
           'arrowLineUp',
-          'arrowRight'
+          'arrowRight',
+          'notice',
+          'close'
         ]
       }
     }

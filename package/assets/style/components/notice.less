@@ -1,0 +1,60 @@
+@import "../utils/const.less";
+
+.z-notice-wrapper{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  &-left{
+    font-size: @normalFontSize;
+    padding-right: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-right{
+    font-size: @normalFontSize;
+    padding-left: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-main{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    height: 16px;
+    &-info{
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: @smallFontSize;
+      white-space: nowrap;
+    }
+  }
+}
+
+.z-notice-animate-play{
+  animation: global-notice-animate-play linear both;
+}
+/* 这里不换一个循环动画的className会造成第2次动画继续第一个的bug */
+.z-notice-animate-infinite{
+  animation: global-notice-animate-infinite linear infinite both;
+}
+
+@keyframes global-notice-animate-play{
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes global-notice-animate-infinite{
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

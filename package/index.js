@@ -10,6 +10,7 @@ import {
   Popup,
   Tab,
   Collapse,
+  Notice,
 } from './components'
 
 const components = [
@@ -21,6 +22,7 @@ const components = [
   Popup,
   Tab,
   Collapse,
+  Notice,
 ];
 
 const install = (Vue, opts={}) => {

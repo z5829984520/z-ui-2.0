@@ -15,6 +15,7 @@ import {
   Popup,
   Tab,
   Collapse,
+  Notice,
 } from '../package/components'
 
 Vue.use(mavonEditor);
@@ -28,6 +29,7 @@ Vue.use(Tab);
 Vue.use(Tab.Item);
 Vue.use(Collapse);
 Vue.use(Collapse.Item);
+Vue.use(Notice);
 
 Vue.config.productionTip = false;
 

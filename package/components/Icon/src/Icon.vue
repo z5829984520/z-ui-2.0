@@ -8,6 +8,8 @@
     success,
     warning,
     arrowRight,
+    notice,
+    close,
   } from './Item'
 
   export default {
@@ -16,7 +18,9 @@
       arrowLineUp,
       success,
       warning,
-      arrowRight
+      arrowRight,
+      notice,
+      close,
     },
     props: {
       name: {
