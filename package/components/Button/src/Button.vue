@@ -52,7 +52,6 @@
         type: Boolean,
         default: false
       },
-      rippleColor: String,
     },
     methods: {
       handleClick(e) {

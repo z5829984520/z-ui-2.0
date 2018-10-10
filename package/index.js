@@ -11,6 +11,7 @@ import {
   Tab,
   Collapse,
   Notice,
+  Tag,
 } from './components'
 
 const components = [
@@ -23,6 +24,7 @@ const components = [
   Tab,
   Collapse,
   Notice,
+  Tag
 ];
 
 const install = (Vue, opts={}) => {

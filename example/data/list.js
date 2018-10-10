@@ -9,5 +9,6 @@ export const list = [
   {label: 'Popup', dec: '侧滑栏', path: 'popup'},
   {label: 'Tab', dec: '内容切换', path: 'tab'},
   {label: 'Collapse', dec: '折叠组价', path: 'collapse'},
-  {label: 'Notice', dec: '通知组件', path: 'notice'}
+  {label: 'Notice', dec: '通知组件', path: 'notice'},
+  {label: 'Tag', dec: '标签组件', path: 'tag'}
 ];

@@ -14,6 +14,7 @@ import Popup from '../views/list/pages/Popup'
 import Tab from '../views/list/pages/Tab'
 import Collapse from '../views/list/pages/Collapse'
 import Notice from '../views/list/pages/Notice'
+import Tag from '../views/list/pages/Tag'
 
 Vue.use(Router);
 
@@ -70,6 +71,10 @@ export default new Router({
         {
           path: '/notice',
           component: Notice
+        },
+        {
+          path: '/tag',
+          component: Tag
         }
       ]
     },

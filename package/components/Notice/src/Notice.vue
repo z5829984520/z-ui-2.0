@@ -83,8 +83,6 @@
         this.messageWidth = this.$refs.message.getBoundingClientRect().width;
         this.wrapWidth = this.$refs.wrapper.getBoundingClientRect().width;
 
-        console.log(this.messageWidth, this.wrapWidth);
-
         if (this.isScroll && this.messageWidth > this.wrapWidth) {
           this.duration = this.messageWidth / this.speed;
           this.messageClassName = 'z-notice-animate-play'

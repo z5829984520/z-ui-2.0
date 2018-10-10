@@ -1,0 +1,80 @@
+@import "../utils/const.less";
+
+.z-tag-wrapper{
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 4px 8px;
+  &-info{
+    background-color: @infoColor;
+    color: #fff;
+  }
+  &-info-plain{
+    background-color: transparent;
+    border: 1px solid @infoColor;
+    color: @infoColor;
+  }
+
+  &-primary{
+    background-color: @primaryColor;
+    color: #fff;
+  }
+  &-primary-plain{
+    background-color: transparent;
+    border: 1px solid @primaryColor;
+    color: @primaryColor;
+  }
+
+  &-success{
+    background-color: @successColor;
+    color: #fff;
+  }
+  &-success-plain{
+    background-color: transparent;
+    border: 1px solid @successColor;
+    color: @successColor;
+  }
+
+  &-warning{
+    background-color: @warningColor;
+    color: #fff;
+  }
+  &-warning-plain{
+    background-color: transparent;
+    border: 1px solid @warningColor;
+    color: @warningColor;
+  }
+
+  &-danger{
+    background-color: @dangerColor;
+    color: #fff;
+  }
+  &-danger-plain{
+    background-color: transparent;
+    border: 1px solid @dangerColor;
+    color: @dangerColor;
+  }
+
+  &-normal{
+    font-size: @normalFontSize;
+  }
+  &-mini{
+    font-size: @miniFontSize;
+  }
+  &-small{
+    font-size: @smallFontSize;
+  }
+  &-large{
+    font-size: @largeFontSize;
+  }
+
+  &-border{
+    border-radius: 4px;
+  }
+  &-disabled{
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}

@@ -10,6 +10,7 @@ import Popup from './Popup'
 import Tab from './Tab'
 import Collapse from './Collapse'
 import Notice from './Notice'
+import Tag from './Tag'
 
 export {
   Ripple,
@@ -23,5 +24,6 @@ export {
   Popup,
   Tab,
   Collapse,
-  Notice
+  Notice,
+  Tag
 }
